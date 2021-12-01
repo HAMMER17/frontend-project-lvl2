@@ -38,5 +38,9 @@
     "jest": "^27.4.2",
     "jest-cli": "^27.4.2",
     "power-assert": "^1.6.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
   }
 }
