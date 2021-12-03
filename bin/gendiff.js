@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import { Command } from 'commander/esm.mjs';
+// import { Command } from 'commander/esm.mjs';
+import program from 'commander';
 import genDiff from '../src/index.js';
 
 const program = new Command();
@@ -13,4 +14,4 @@ program
   .action((filepath1, filepath2, { format }) => {
     console.log(genDiff(filepath1, filepath2, format));
   });
-program.parse();
+program.parse(process.argv);
