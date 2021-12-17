@@ -1,4 +1,5 @@
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
+
 
 export default (format, data) => {
   switch (format) {
@@ -10,4 +11,3 @@ export default (format, data) => {
       throw new Error(`Формат не поддерживается: ${format}`);
   }
 };
-
