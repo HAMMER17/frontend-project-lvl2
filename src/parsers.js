@@ -1,6 +1,5 @@
 import * as yaml from 'js-yaml';
 
-
 export default (format, data) => {
   switch (format) {
     case 'json':
